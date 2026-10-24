@@ -3035,7 +3035,10 @@ input, select, textarea {
 	}
 
 /* XSmall */
-
+/* ---------- Paneles más anchos ---------- */
+.main .container {
+	width: 50em;
+}
 	@media screen and (max-width: 480px) {
 
 		/* Basic */
@@ -3140,5 +3143,10 @@ input, select, textarea {
 					margin: 0;
 					padding: 0;
 				}
-
 	}
+	@media screen and (min-width: 981px) {
+	#header .container {
+		width: 50em;
+		margin-left: -25em;
+	}
+}
