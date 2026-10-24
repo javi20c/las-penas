@@ -3205,4 +3205,8 @@ input, select, textarea {
 		width: 50em;
 		margin-left: -25em;
 	}
+	.main .container,
+#header .container {
+	background: rgba(255, 255, 255, 0.85);
+}
 }
