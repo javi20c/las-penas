@@ -3052,7 +3052,7 @@ input, select, textarea {
 .video-caption { font-size: 0.8em; font-style: italic; margin-top: 0.75em; }
 #two .container,
 #four .container {
-	background: rgba(240, 246, 243, 0.96);
+	background: rgba(240, 246, 243, 0.85);
 }
 #three ul {
 	list-style: none;
