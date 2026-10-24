@@ -3054,6 +3054,29 @@ input, select, textarea {
 #four .container {
 	background: rgba(240, 246, 243, 0.96);
 }
+#three ul {
+	list-style: none;
+	text-align: left;
+	max-width: 40em;
+	margin: 2em auto 0;
+	padding-left: 2em;
+	border-left: 3px solid #8cd1a8;
+}
+#three ul li {
+	position: relative;
+	padding-left: 0.5em;
+	margin-bottom: 1.8em;
+}
+#three ul li::before {
+	content: '';
+	position: absolute;
+	left: calc(-2em - 8.5px);
+	top: 0.5em;
+	width: 14px;
+	height: 14px;
+	background: #8cd1a8;
+	border-radius: 50%;
+}
 	@media screen and (max-width: 480px) {
 
 		/* Basic */
