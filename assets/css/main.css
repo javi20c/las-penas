@@ -3209,4 +3209,11 @@ input, select, textarea {
 #header .container {
 	background: rgba(255, 255, 255, 0.85);
 }
+.main .goto-next {
+	background-color: rgba(144, 144, 144, 0.35);
+}
+
+.main .goto-next:hover {
+	background-color: rgba(140, 209, 168, 0.7);
+}
 }
