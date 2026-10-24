@@ -3077,6 +3077,24 @@ input, select, textarea {
 	background: #8cd1a8;
 	border-radius: 50%;
 }
+#four ul.icons-grid li { transition: background-color 0.2s ease-in-out; }
+#four ul.icons-grid li:hover { background-color: rgba(140, 209, 168, 0.15); }
+
+/* ---------- #five: comentarios ---------- */
+#five blockquote {
+	text-align: left;
+	border-left-color: #8cd1a8;
+	background: rgba(140, 209, 168, 0.08);
+	border-radius: 0 8px 8px 0;
+	padding: 1em 1.5em;
+}
+#five blockquote p { margin: 0 0 0.5em; }
+#five blockquote footer {
+	text-align: right;
+	font-weight: 700;
+	font-size: 0.9em;
+	color: #61686b;
+}
 	@media screen and (max-width: 480px) {
 
 		/* Basic */
