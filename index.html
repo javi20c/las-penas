@@ -153,36 +153,60 @@
 					</div>
 				</div>
 			</section>
-<!-- FORMULARIO -->
-<section id="six" class="main special">
-	<div class="container">
-		<div class="content">
-			<header class="major">
-				<h2>Deja tu comentario</h2>
-			</header>
-			<form action="https://formspree.io/f/TU_CODIGO" method="POST">
-				<div class="fields">
-					<div class="field half">
-						<label for="nombre">Nombre</label>
-						<input type="text" name="nombre" id="nombre" required />
-					</div>
-					<div class="field half">
-						<label for="email">Correo</label>
-						<input type="email" name="email" id="email" required />
-					</div>
-					<div class="field">
-						<label for="mensaje">Tu experiencia en Las Peñas</label>
-						<textarea name="mensaje" id="mensaje" rows="5" required></textarea>
+
+		<!-- FORMULARIO -->
+			<section id="six" class="main special">
+				<div class="container">
+					<div class="content">
+						<header class="major">
+							<h2>Deja tu comentario</h2>
+						</header>
+						
+						<!-- agregamos un id para controlar el envio con javascript -->
+						<form id="form-comentario">
+							<div class="fields">
+								<div class="field half">
+									<label for="nombre">Nombre</label>
+									<input type="text" name="nombre" id="nombre" required />
+								</div>
+								<div class="field half">
+									<label for="email">Correo</label>
+									<input type="email" name="email" id="email" required />
+								</div>
+								<div class="field">
+									<label for="mensaje">Tu experiencia en Las Peñas</label>
+									<textarea name="mensaje" id="mensaje" rows="5" required></textarea>
+								</div>
+							</div>
+							<ul class="actions special">
+								<li><input type="submit" value="Enviar" class="button primary" /></li>
+							</ul>
+						</form>
+
+						<!-- mensaje de exito oculto por defecto -->
+						<div id="mensaje-exito" style="display: none; margin-top: 20px; padding: 20px; background: rgba(0,0,0,0.05); border-radius: 4px;">
+							<h3>¡comentario enviado con éxito!</h3>
+							<p>gracias por compartir tu experiencia en las peñas.</p>
+						</div>
 					</div>
 				</div>
-				<ul class="actions special">
-					<li><input type="submit" value="Enviar" class="button primary" /></li>
-				</ul>
-			</form>
-		</div>
-	</div>
-</section>
-		<!-- Scripts -->
+			</section>
+				<!-- Scripts -->
+		 	<script>
+				// obtenemos los elementos del DOM
+				const formulario = document.getElementById('form-comentario');
+				const mensajeExito = document.getElementById('mensaje-exito');
+
+				formulario.addEventListener('submit', function(e) {
+					e.preventDefault(); // detenemos el comportamiento por defecto de recargar o buscar servidor
+					
+					// ocultamos el formulario
+					formulario.style.display = 'none';
+					
+					// mostramos el mensaje de exito
+					mensajeExito.style.display = 'block';
+				});
+			</script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
